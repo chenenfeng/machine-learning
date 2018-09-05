@@ -28,7 +28,7 @@ predictors_without_categoricals = train_predictors.select_dtypes(exclude=['objec
 so,
 part1: data preparation
 1. prepare data for both target and predictors
-2. dropna in target and split_train_test
+2. dropna in target and split_train_test(can I use imputation in target missing value)
 3. handle columns_with_missing to get candidate train and test data
 4. nunique< 10 to filter the columns with low cardinality and + numeric columns
 part2: one_hot_encoding to variables
