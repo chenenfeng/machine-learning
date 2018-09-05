@@ -3,3 +3,18 @@ continuing improve model
 XGBoost is an outstanding MODEL to handle tabular data, more model tuning than RandomForest
 it is a IMPLEMENTATION of Gradient Boosted Decision Tree
 calculate errors for observation, then predict, use prediction to build new model, that is a cycle, forms ensemble model
+"""
+
+#also take normal step:
+part 1: data preparation
+1. data = read_csv()   data.dropna(axis = , subset = ['target column'], inplace = True) to remove missing value of target
+2. target = data.price  predictors = data.drop(['target column'], axis = ).select_dtypes(exclude = ['object']) 
+# that is a lazy way to exclude 'object' columns, be careful to select_dtypes, not select_dtype
+3. Xtrain, Xtest, Ytrain, Ytest = train_test_split(predictors, target, test_size = )
+#That is normal train_test_split, something NEW!:train_test_split(predictors.as_matrix(), target.as_matrix())
+#what is .as_matrix() ????
+4. use Imputer() to handle missing value of Xtrain and Xtest
+#Question: what are the differences between Imputer().fit Imputer().fit_transform  Imputer().transform
+part 2: model application
+5. just import a regressor, and regressor.fit(Xtrain, ytrain, some other parameters)  
+# what is verbose = False mean
