@@ -1,0 +1,5 @@
+"""
+continuing improve model
+XGBoost is an outstanding MODEL to handle tabular data, more model tuning than RandomForest
+it is a IMPLEMENTATION of Gradient Boosted Decision Tree
+calculate errors for observation, then predict, use prediction to build new model, that is a cycle, forms ensemble model
