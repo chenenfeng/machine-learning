@@ -16,5 +16,9 @@ part 1: data preparation
 4. use Imputer() to handle missing value of Xtrain and Xtest
 #Question: what are the differences between Imputer().fit Imputer().fit_transform  Imputer().transform
 part 2: model application
-5. just import a regressor, and regressor.fit(Xtrain, ytrain, some other parameters)  
+5. just import a regressor, such as XGBRegreesor, then regressor.fit(Xtrain, ytrain, some other parameters)  
 # what is verbose = False mean
+6. gain prediction from fitted regressor model, code like: prediction = regressor.predict(test_X)
+7. use evaluation metrics to say if model fits well for test data, code like: mean_absolute_error(prediction, test_Y)
+
+As for regressor: XGBRegressor() has many parameters which need to tune.
