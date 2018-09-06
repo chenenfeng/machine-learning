@@ -1,0 +1,5 @@
+lots of features will cause some problems:
+1. time of analyzing features and model training will longer 
+2. dimension disaster
+3. features sparse??
+4. not robust
