@@ -3,3 +3,42 @@ lots of features will cause some problems:
 2. dimension disaster
 3. features sparse??
 4. not robust
+
+process:
+1.generate a feature subset
+2. use evaluation function to evaluate this generated feature subset
+3. evaluation result will compared to stopping rule, if satisfied, go step 4 then stop, don't satisfy requirement, return step 1
+4. to test this feature subset's validation 
+    
+    
+1. generate feature subset procedure
+don't change property of feature: Complete, Heuristic, random. 
+take space change: PCA, Fourier Transform, Wavelet Transform
+  (1)Complete method: Exaustive, non-exaustive
+      Breadth First Search
+      Branch and Bound
+      Beam Search
+      Best First Search
+   (2) Heuristic
+      Sequential Forward Selection
+      Sequential Backward Selection
+      the two are greedy algorithms, easy to gain local optimization
+      Bidirectional Search
+      Plus-L Minus-R Selection
+      Sequential Floating Selection
+      Decision Tree
+   (3) Random
+      Random Generation plus Sequential Selection
+      Simulated Annealing
+      Genetic Algorithms
+  
+2. evaluation
+filter, encapsulate, hybrid
+filter: like preprocessing, use inner charater of data to evaluate features
+encapsulate: make study result as a part of evaluation
+usual functions:
+(1)Chi-square test
+(2) Correlation
+(3) Distance Metrics
+(4) Information gain
+(5) Classfier error rate
