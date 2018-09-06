@@ -1,0 +1,3 @@
+partial dependence plots help people to see how each predictors affects model predictions
+it looks like the coefficients in linear regression
+partial dependence plots can captrue relationship between some predictors with target???
