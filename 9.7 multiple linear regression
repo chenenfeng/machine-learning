@@ -1,0 +1,11 @@
+y = b0+b1x1+...+bnxn
+assumptions:!!!
+1.linearity 
+2. Homoscedasticity: constant variance of the error
+3. Multivariative Normality: assumes that the residuals are normally distributed
+4. Lack of Multicollinearity
+select variables:
+1. forward selection  2. backward elimination, i love that word  3.bi-directional comparison
+
+dummy variable traps!
+if all variables get into a category, there is duplicate, we can just use all n-1 category to describe the left one
