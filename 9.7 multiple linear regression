@@ -9,3 +9,8 @@ select variables:
 
 dummy variable traps!
 if all variables get into a category, there is duplicate, we can just use all n-1 category to describe the left one
+
+step: also the similar three steps:
+1. preprocess data
+2. fit model to the training set （same model with simple linear regression）
+3. make prediction by fitted model 
