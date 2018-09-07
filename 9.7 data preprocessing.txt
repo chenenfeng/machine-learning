@@ -6,3 +6,4 @@
    but I used to encode categorical variables by importing pandas and use pd.get_dummies
    difference?
 5. split the dataset into training set and test set
+6. feature scaling because different features highly varing in magnitudes, high will weigh more in the distance calculation
