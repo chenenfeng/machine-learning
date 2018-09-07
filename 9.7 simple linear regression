@@ -1,0 +1,6 @@
+just predict a response based on single feature
+four step:
+1. preprocess data
+2. use linear regressor
+3. predict Y_test based on X_test
+4. visulazation
