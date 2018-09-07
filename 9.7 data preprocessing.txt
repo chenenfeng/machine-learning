@@ -1,0 +1,4 @@
+1. import pandas and numpy
+2. read_csv()  separate matrix and vectors of independent and dependent variables
+3. handleing missing data   dropna,   imputer()
+4. encoding categorical data, using LabelEncoder class from sklearn.preprocessing
