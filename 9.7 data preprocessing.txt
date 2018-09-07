@@ -1,4 +1,8 @@
 1. import pandas and numpy
-2. read_csv()  separate matrix and vectors of independent and dependent variables
+2. read_csv()  separate matrix and vectors of independent and dependent variables(first split)
+# dataset.iloc[[m],n] express n+1th columns m+1th elements, or can use dataset.iloc([0:2,n])
 3. handleing missing data   dropna,   imputer()
-4. encoding categorical data, using LabelEncoder class from sklearn.preprocessing
+4. encoding categorical data, using LabelEncoder class from sklearn.preprocessing.
+   but I used to encode categorical variables by importing pandas and use pd.get_dummies
+   difference?
+5. split the dataset into training set and test set
