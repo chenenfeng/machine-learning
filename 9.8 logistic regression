@@ -1,4 +1,4 @@
-solve: classification problem
+solve: classification problem!!!
 estimation: estimate probabilities using logistic function
 logistic function: map: all real number ---> [0,1]  y=1/(1+exp(-x))
 after gaining probabilities, they must be transformed to binary values: 0, 1  it will use threshold classifier
@@ -6,6 +6,7 @@ output: discrete outcomes
 
 1.data preprocessing
 (1) import data
+df. info
 (2) handle missing value
 (3) split data to training set and test set
 (4) scaling features
@@ -18,3 +19,24 @@ LogisticRegression().fit(train_X, train_Y)
 4. evaluation the prediction
 
 the story behind logistic regression!!!!!!!!
+
+negative class(absence), positive class(present)
+
+if linear regression:
+1. hypothesis(theta) = theta' X
+threshold  hthetax > 0.5, predict y =1 
+but so big value appear, hypothesis function may change, threshold also changes
+2. hypothesis(theta) can >1 or <0
+
+logistic hypothesis representation:
+want 0<= h(theta) <= 1
+h(theta)(x) = g(theta'x),  g(z) =1/(1+exp(-z))  g: sigmoid function/logistic function
+h(theta)(x) = 1/(1+exp(-theta'x))
+parameter theta wait us to fit
+h(theta)(x): estimated probability that y=1 on input x(probability that y=1, given x, parameterized by theta)
+
+decision boundary
+y =1: g(theta'x)) >=0.5  theta'x >0  theta'x = 0: decision boundary
+
+non-linear decision boundary
+theta0+theta1*x1+theta2*x2+theta3*x1^2+theta4*x2^2
