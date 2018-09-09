@@ -1,0 +1,20 @@
+solve: classification problem
+estimation: estimate probabilities using logistic function
+logistic function: map: all real number ---> [0,1]  y=1/(1+exp(-x))
+after gaining probabilities, they must be transformed to binary values: 0, 1  it will use threshold classifier
+output: discrete outcomes
+
+1.data preprocessing
+(1) import data
+(2) handle missing value
+(3) split data to training set and test set
+(4) scaling features
+
+2. logistic regression
+LogisticRegression().fit(train_X, train_Y)
+
+3. make prediction
+
+4. evaluation the prediction
+
+the story behind logistic regression!!!!!!!!
