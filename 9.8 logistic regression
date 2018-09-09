@@ -40,3 +40,15 @@ y =1: g(theta'x)) >=0.5  theta'x >0  theta'x = 0: decision boundary
 
 non-linear decision boundary
 theta0+theta1*x1+theta2*x2+theta3*x1^2+theta4*x2^2
+
+cost function (why log? other convex function can't?)
+how to choose parameter theta
+linear: J(theta) = 1/m*sum(1/2*(htheta(xi)-yi)^2)
+ligistic:  cost(htheta(x),y) = -log(htheta(x))  if y=1;  -log(1-htheta(x))   if y=0
+cost = 0 if y = 1 and htheta(x) =1,  we will penalize algorithm by a very large cost
+
+advanced optimization
+want minimize cost function    gradient descent: learning rate alpha
+conjugate gradient, BFGS, L-BFGS: no need to pick learning rate alpha,  faster than gradient descent
+initial guess
+function [jval, gradient] = costfunction(theta)
