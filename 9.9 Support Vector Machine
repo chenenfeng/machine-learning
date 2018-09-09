@@ -1,0 +1,9 @@
+solve: both regression and classification
+find hyperplane to classify different classes
+output: optimal hyperplane, maximize distance to nearest element of each tag
+nonlinear: add third dimention
+tuning parameter: kernel to transform linear SVM to a linear algebra
+                  low gamma(high gamma): points which far away(close to) from seperate line are considered into line calculation
+                  regularization: large valur of regularization means model will choose small-margin hyperplane
+                  margin: is the seperate line to the closest points of each class, good margin means large distance(am i right)
+                  
