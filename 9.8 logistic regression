@@ -42,9 +42,12 @@ non-linear decision boundary
 theta0+theta1*x1+theta2*x2+theta3*x1^2+theta4*x2^2
 
 cost function (why log? other convex function can't?)
+maximum likelihood explanation:
+-L(y1,y) = log(y1^y+(1-y1)^y)
 how to choose parameter theta
-linear: J(theta) = 1/m*sum(1/2*(htheta(xi)-yi)^2)
-ligistic:  cost(htheta(x),y) = -log(htheta(x))  if y=1;  -log(1-htheta(x))   if y=0
+linear: J(theta) = 1/m*sum(1/2*(htheta(xi)-yi)^2), if use linear cost function to logistic, it will become non-convex
+and easy to dive in local minimum
+logistic:  cost(htheta(x),y) = -log(htheta(x))  if y=1;  -log(1-htheta(x))   if y=0
 cost = 0 if y = 1 and htheta(x) =1,  we will penalize algorithm by a very large cost
 
 advanced optimization
