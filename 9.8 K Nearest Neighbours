@@ -1,0 +1,9 @@
+solve: classification problem
+charater: non-parametic(no assumption on data distribution)
+          instance-based: memoryzing training instance
+
+three key elements: a set of labeled objects
+                    distance
+                    k: numbers of nearest neighbours
+
+Euclidean distance
