@@ -1,0 +1,18 @@
+binary classification, multiclass classfication, probability classfication
+regression(prediction)
+supervised learning: learning from training data
+feature extraction: mapping raw input X -> Rd;  feature vectors = input vectors
+loss function: scroes how far our predictions away from the disired "target" output
+split train and test data for time series: random? wrong! because predict test data just like predict closet training data
+        so we need set a boundary T
+
+try lots of fancy ML models, gain different predict functions, use test data to evaluate different ML models
+then split training data and validation data again
+validation data are similar to test data, but it is used to choose best ML model
+
+k-fold cross validation: for small dataset
+partition dataset evenly, for i = D1 to Dk, training set: Dk-Di,  test set: Di
+
+leakage: identifying cat pictures by using the title of them
+sample bias: test data and deploy data has different distribution. such as U.S. vote model, phone survey only dials landlines
+Nonstationarity
