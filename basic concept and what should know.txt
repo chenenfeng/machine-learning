@@ -1,0 +1,23 @@
+AI: to make an agend perceive the world, forms plans and make decision on their own to achieve the goal
+ML: subfield of AI 
+NLP: need database and knowledge engineering, mathematical logic, language meaning website
+      language, format language
+real system design, ml platform applement, ex. FBlearner, uber's Micrakilo, know process and pipleline
+more detail: BP in NN, engineerize and 
+detailed development, be deeper in one area. know everything a little= don't do well in anything
+about framework, like caffe tensorflow pytorch mxnet, at least master one of them
+towards every model in the specific framework, input? output? arguments?
+ml theory
+
+proj: actual work, completion degree, contribution
+hashmap, python dictionary  hash() make key and value --> directory, map function: hash funtion
+store list： hash table  open addressing
+
+SVM vs Logistic Regression
+solution to overfitting、regulation,
+droupout,  batch normalisation
+framework contribution
+convolution
+sequence to sequence
+make project development: pre-train model able to tailor, check point
+depthwise-CNN   1*1 kernel  

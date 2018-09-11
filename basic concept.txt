@@ -1,2 +1,0 @@
-AI: to make an agend perceive the world, forms plans and make decision on their own to achieve the goal
-ML: subfield of AI 
