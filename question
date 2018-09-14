@@ -4,3 +4,6 @@
 4. pd.getdummis()
 for column that has the attribute .dtype
 5. train_test_split, handle the missing value and categorical data, which one should do first?
+
+6. when applied trained model to new dataset, the features is different according to the various missing value situation, how
+to solve!??
