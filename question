@@ -1,0 +1,6 @@
+1. How to solve text missing value.
+2. how to select features  first in   back in
+3. how to merge two dataframes()
+4. pd.getdummis()
+for column that has the attribute .dtype
+5. train_test_split, handle the missing value and categorical data, which one should do first?
