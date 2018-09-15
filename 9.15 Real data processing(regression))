@@ -1,0 +1,7 @@
+know yourself, know data, comprehensive but not exhaustive
+problems come, how to form a data analysis princinple??
+1. look at each variable, do some analysis and thinking, conceive their meanings and importance to the whole problem
+2. focus on dependent variable, do more detailed analysis.
+3. fix eyes on relationship between independent variables and dependent variable
+4. data clean, such as missing value and categorical data
+5. check assumptions, if data don't satisfy the assumptions, how can we apply the model based on some specific assumptions?
