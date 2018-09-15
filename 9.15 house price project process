@@ -7,7 +7,7 @@ Don't confuse them with train_test_split()'s result
 4. add a new column ['training test'], value = 1 means train set, value = 0 means test set
 
 
-5. pd.concat[train set, test set]
+5. Predictors = pd.concat[train set, test set]
 6. imputer() to handle the missing value in numeric columns
 However, find the pd.getdummies can directly do the one-hot encoding, regardless of missing value in categorical data
 7. pd.getdummies() to do the one-hot encoding to object columns
