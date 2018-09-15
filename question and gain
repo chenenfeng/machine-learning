@@ -7,3 +7,7 @@ for column that has the attribute .dtype
 
 6. when applied trained model to new dataset, the features is different according to the various missing value situation, how
 to solve!??
+
+7. pd.read_csv(filename, index_col = 'Id')
+
+8.
