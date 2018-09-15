@@ -1,0 +1,21 @@
+there are two datasets, one called train.csv(have the target value), another called test.csv(no target value)
+So the following process will call train.csv dataset as train set, test.csv dataset as test set.
+Don't confuse them with train_test_split()'s result
+1. read_csv files,  index_col = 'Id'!!!!
+2. import sklearn library
+3. gain target and predictors(features) from train set(what if train and test set have different features?)
+4. add a new column ['training test'], value = 1 means train set, value = 0 means test set
+
+
+5. pd.concat[train set, test set]
+6. imputer() to handle the missing value in numeric columns
+However, find the pd.getdummies can directly do the one-hot encoding, regardless of missing value in categorical data
+7. pd.getdummies() to do the one-hot encoding to object columns
+8. train_test_spilt
+9. XGBoost() to fit(X_train, y_train)
+10. XGBoost().predict(X_test)
+11. look at the metrics to evaluate this model
+
+in Step 9, I tried RandomFroestRegressor() and XGBoost() and XGBoost(parameters has been tuned)
+the best model among these three is: XGBoost(parameters has been tuned)
+to explore the algorithms behind them. That is important!
