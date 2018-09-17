@@ -1,0 +1,20 @@
+supervised study: model parameters, target function, develop
+regression/classification: according to y is discrete or continuous
+model training: solve parameters wt*X
+
+target function: lost function and regular term
+lost function:regression: r = f(x)-y, L2 lost: 1/2*r^2, sensitive to noise
+classification logistic lost: negative log likelihood lost
+yhat = sigmoid(wtx+b)  P(y|x) = （yhat^y)(1-yhat)^(1-y)  log(P(y|x))  J（w,b）
+log likelihood , MLE
+
+Don't only choose model minimum lost function, because complicated can be overfit, can contain traning set's noise
+so we need regular term to put punish to model complex, add regular term like L2 regular
+it will become optimization problem with a constrain(regular term < t)
+
+lost and regular term conbination can become lots of model like lasso, Ridge regression， SVM
+
+nonlinear: basis function
+
+optimization: gain optimal solution towards target function
+Stochastic gradient descent
