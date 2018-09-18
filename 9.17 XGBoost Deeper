@@ -18,3 +18,44 @@ nonlinear: basis function
 
 optimization: gain optimal solution towards target function
 Stochastic gradient descent
+
+
+classification and regression tree(CART): nonparameter model
+binary tree  
+f(x) = E[y|x]  = sum wm
+parameter: split feature and threshold\
+target function: training lost; regular term(split node number? depth?)
+tree models are easy to overfit,  solve: stop previous, cut branch, bagging
+
+CART method: optimize
+1. build tree (recursive)   minimize lost function
+2. cut branch       reduce regular norm
+
+step 1: build tree
+after spliting, every branch will perform on their pure degree
+pure function: regression: L2 lost;   classification: wrong classification ratio, entropy, Gini coefficient
+stop condition:
+1.split bring lost decreasing so small,
+2. exceed max_depth
+3. Left or Right whether pure enough, or sample number too small
+
+step 2: cut branch
+
+build process too greedy, can become weak learner of boosting
+
+tree in sklearn
+CART optimal applement:
+build tree: exhasutive every value in every feature
+don't take branch cut (use cross validation to choose the best tree parameter)
+DecisionTreeClassifier, DecisionTreeRegressor
+
+criterion(split quality), spliter, max_features, max_depth, min_samples_split, min_samples_leaf
+min_weight_fraction_leaf, max_leaf_nodes, class_weight, random_state, presort
+
+Random Forest
+reduce variance, 
+BootStrap （Put back sampling） B times, and aggregating
+randomly select features and samples
+
+tree structure, after select the split feature, this feature has n values, and every value can be split threshold
+choose what threshold? should look at the pure extend after split. 
