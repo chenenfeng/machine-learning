@@ -1,0 +1,30 @@
+2.24
+five questions: 
+
+1.odds and probabilities. 
+It helps me to get familiar to odds and odds ratio calculation, interpretation
+and logit function: use linear model to express the odds ratio
+
+2.Maximum Likelihood Estimate and maximum a posteriori (MAP)
+It helps me review the MLE: multiply PDF, take natural log, calculate derivatives
+Explore MAP, Bayesian setting, it take parameters prior distribution as reference to take estimation
+that is the difference between MAP and MLE
+
+3.Softmax Loss
+It helps me to clarify use softmax function to express loss. 
+softmax take exponential operation to linear classifier,
+more specifically, the loss is to -log() towards a specific class we want
+I got more sense from problem 5
+
+4.KL-divergence
+I think it is another loss 
+helps me more familiar to KL-divergence, especially the direction difference
+Also got an idea: train the parameter to make one distribution fit to another
+just take the KL-divergence's derivatives and calculate the relation including the parameter
+similar to MLE
+
+5.SVM loss and Softmax Loss
+Calculate two kinds of loss manually.
+Loss is bounded towards specific class, e.g. we want class 2, then we compute loss is towards class 2
+SVM loss is sum of the different score between classes
+Softmax Loss is to take expo() -> normalization() -> -log() aim to specific class we want
